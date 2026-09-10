@@ -118,7 +118,7 @@ export const PillMenu: FC = () => {
                   href="https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hidden md:flex items-center justify-center px-3 py-3  text-[#e6d9cf] rounded-lg font-black text-sm hover:bg-[#feaac0] hover:text-[#141414] transition-colors duration-200 "
+                  className="hidden md:flex items-center justify-center px-3 py-3 text-[#e6d9cf] rounded-lg font-jansina font-normal text-sm hover:bg-[#F52222] hover:text-white transition-colors duration-200"
                 >
                   Join Now
                 </Link>
@@ -160,7 +160,7 @@ export const PillMenu: FC = () => {
                   href="https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:hidden menu-item translate-y-4 flex items-center justify-center px-4 py-3 bg-[#fcf2e8] text-[#141414] rounded-xl font-black text-base hover:bg-[#e6d9cf] transition-colors duration-200"
+                  className="md:hidden menu-item translate-y-4 flex items-center justify-center px-4 py-3 bg-[#F52222] text-white rounded-xl font-jansina font-normal text-base hover:bg-[#d01b1b] transition-colors duration-200"
                   style={{
                     opacity: getItemOpacity(0),
                     transform: isOpen ? "translateY(0)" : "translateY(16px)",
@@ -178,7 +178,7 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Home</span>
+                    <span className="font-jansina font-normal text-base">Home</span>
                     <span className="font-medium text-sm text-[#ccc]">
                       Back to main page
                     </span>
@@ -193,7 +193,7 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Timeline</span>
+                    <span className="font-jansina font-normal text-base">Timeline</span>
                     <span className="font-medium text-sm text-[#ccc]">
                       Event schedule
                     </span>
@@ -223,7 +223,7 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Team</span>
+                    <span className="font-jansina font-normal text-base">Team</span>
                     <span className="font-medium text-sm text-[#ccc]">
                       Meet the organizers
                     </span>
@@ -238,7 +238,7 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">
+                    <span className="font-jansina font-normal text-base">
                       Judges & Mentors
                     </span>
                     <span className="font-medium text-sm text-[#ccc]">

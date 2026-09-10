@@ -24,32 +24,32 @@ interface TeamCardProps {
 const getCategoryColor = (category: string) => {
   switch (category) {
     case "organizer":
-      return "bg-[#feaac0]";
+      return "bg-[#F52222]";
     case "faculty":
-      return "bg-[#c6fe69]";
+      return "bg-[#002A4A]";
     case "team":
-      return "bg-[#ffc5dd]";
+      return "bg-[#F52222]";
     case "judge":
-      return "bg-[#ff9f40]";
+      return "bg-[#002A4A]";
     case "mentor":
-      return "bg-[#4bc0c0]";
+      return "bg-[#F52222]";
     default:
-      return "bg-gray-500";
+      return "bg-[#002A4A]";
   }
 };
 
 const getHoverColor = (category: string) => {
   switch (category) {
     case "organizer":
-      return "hover:text-[#feaac0]";
+      return "hover:text-[#F52222]";
     case "faculty":
-      return "hover:text-[#c6fe69]";
+      return "hover:text-[#002A4A]";
     case "team":
-      return "hover:text-[#ffc5dd]";
+      return "hover:text-[#F52222]";
     case "judge":
-      return "hover:text-[#ff9f40]";
+      return "hover:text-[#002A4A]";
     case "mentor":
-      return "hover:text-[#4bc0c0]";
+      return "hover:text-[#F52222]";
     default:
       return "hover:text-gray-600";
   }
@@ -97,7 +97,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
       {/* Name, Role, and Social Links - Inline */}
       <div className="flex justify-between items-start mb-6">
         <div className="flex flex-col">
-          <h3 className="text-xl font-black text-[#141414] leading-tight mb-1">
+          <h3 className="text-xl font-jansina font-normal text-[#141414] leading-tight mb-1">
             {member.name}
           </h3>
           <Badge className="text-[10px] px-1.5 py-0.5">{member.role}</Badge>

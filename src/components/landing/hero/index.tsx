@@ -659,12 +659,11 @@ const Hero = () => {
   // Color blocks configuration for scroll reveal
   const rainbowBlocks = useMemo(
     () => [
-
-      { color: "#c5ffc9", radius: "3rem 3rem 0 0" },
-      { color: "#f9ffa5", radius: "3rem 3rem 0 0" }, 
-      { color: "#feaac0", radius: "3rem 3rem 0 0" }, 
-      { color: "#dcd0fe", radius: "3rem 3rem 0 0" }, 
-      { color: "#d1ecff", radius: "3rem 3rem 0 0" }, 
+      { color: "#002A4A", radius: "3rem 3rem 0 0" }, // Deep Navy
+      { color: "#F52222", radius: "3rem 3rem 0 0" }, // Vivid Red
+      { color: "#FFF4DC", radius: "3rem 3rem 0 0" }, // Warm Cream
+      { color: "#C81D1D", radius: "3rem 3rem 0 0" }, // Crimson Red
+      { color: "#0D3A61", radius: "3rem 3rem 0 0" }, // Midnight Navy
     ],
     []
   );
@@ -699,8 +698,8 @@ const Hero = () => {
             {/* Left - Hackwave Logo */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left order-1 md:order-1">
               <img
-                className="hackwave-img w-48 md:w-64 lg:w-80"
-                src="/loader-imgs/hackwave.svg"
+                className="hackwave-img w-40 md:w-52 lg:w-64"
+                src="/logo/hackwave title.webp"
                 alt="Hackwave Logo"
               />
             </div>
@@ -708,8 +707,8 @@ const Hero = () => {
             {/* Right - Hackathon Info */}
             <div className="flex flex-col items-center md:items-end text-center md:text-right order-2 md:order-2">
               <img
-                className="right-img w-48 md:w-64 lg:w-80"
-                src="/assets/right_img.svg"
+                className="right-img w-56 md:w-80 lg:w-96"
+                src="/assets/right_img.webp"
                 alt="Hackwave Logo"
               />
               {/* <div className="space-y-4">
@@ -751,7 +750,7 @@ const Hero = () => {
               <img
                 src={`/icons/icon_${i}.svg`}
                 alt={`Icon ${i}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           ))}
@@ -760,7 +759,7 @@ const Hero = () => {
         {/* ============================================================================
             ANIMATED TEXT CONTAINER - Text segments that fade in with icons
             ============================================================================ */}
-        <h1 className="hero-heading animated-text leading-none text-2xl md:text-4xl lg:text-5xl">
+        <h1 className="hero-heading animated-text font-jansina font-normal leading-none text-2xl md:text-4xl lg:text-5xl">
           {/* Placeholder icons that will be replaced by animated icons during scroll */}
           <div
             className="placeholder-icon"
@@ -774,7 +773,7 @@ const Hero = () => {
               textSegmentRefs.current[0] = el;
             }}
           >
-            Think beyond boundaries.
+            INNOVATE WITH PURPOSE.{" "}
           </span>
           <div
             className="placeholder-icon"
@@ -788,7 +787,7 @@ const Hero = () => {
               textSegmentRefs.current[1] = el;
             }}
           >
-            Create. Collaborate. Conquer.{" "}
+            DESIGN. BUILD. DISRUPT.{" "}
           </span>
           <span
             className="text-segment text-2xl md:text-4xl lg:text-6xl"
@@ -796,7 +795,7 @@ const Hero = () => {
               textSegmentRefs.current[2] = el;
             }}
           >
-            Code with your crew.
+            CODE WITH YOUR CREW.{" "}
           </span>
           <div
             className="placeholder-icon"
@@ -810,7 +809,7 @@ const Hero = () => {
               textSegmentRefs.current[3] = el;
             }}
           >
-            Solve real problems.
+            SOLVE REAL PROBLEMS.{" "}
           </span>
           <div
             className="placeholder-icon"
@@ -824,7 +823,7 @@ const Hero = () => {
               textSegmentRefs.current[4] = el;
             }}
           >
-            Join the wave that moves tech forward.
+            JOIN THE WAVE THAT MOVES TECH FORWARD.{" "}
           </span>
           <div
             className="placeholder-icon"
@@ -838,8 +837,7 @@ const Hero = () => {
               textSegmentRefs.current[5] = el;
             }}
           >
-            This is Hack
-            <span className="text-pink-300">wave.</span>
+            THIS IS <span className="text-[#F52222]">HACKWAVE.</span>
           </span>
         </h1>
 

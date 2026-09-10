@@ -20,8 +20,8 @@ const Navbar = () => {
         <Copy animateOnScroll={false} delay={0.2}>
           <Link
             href="/"
-            className="text-[#fcf2e8] text-xl md:text-2xl font-bold justify-center
-           px-4 items-center cursor-pointer h-12 flex  overflow-hidden rounded-2xl bg-[#141414] will-change-[height,border-radius]  border border-[#333]"
+            className="text-[#fcf2e8] text-xl md:text-2xl font-jansina font-normal justify-center
+           px-4 items-center cursor-pointer h-12 flex overflow-hidden rounded-2xl bg-[#141414] will-change-[height,border-radius] border border-[#333]"
             onClick={closeMenu}
           >
             HACKWAVE

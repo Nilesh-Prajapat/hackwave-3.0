@@ -29,7 +29,7 @@ const timelineDays = [
   {
     day: "Day 2", 
     date: "24th Aug 2025",
-    color: "#feaac0",
+    color: "#F52222",
     events: [
       "8:00 AM — Breakfast",
       "1:00 PM — Lunch",
@@ -41,7 +41,7 @@ const timelineDays = [
   {
     day: "Day 3",
     date: "25th Aug 2025", 
-    color: "#f9ffa5",
+    color: "#002A4A",
     events: [
       "8:00 AM — Breakfast",
       "10:00 AM — Hacking Ends",
@@ -63,7 +63,7 @@ const timelineDays = [
         {/* Hero Description */}
   <div className="mb-10 md:mb-10">
           <Reveal>
-            <div className="rounded-2xl p-6 md:p-10 bg-[#feaac0] text-[#141414]">
+            <div className="rounded-2xl p-6 md:p-10 bg-[#F52222] text-white">
               <div className="mb-4">
                 <span className="inline-block bg-[#141414] text-[#fcf2e8] px-4 py-2 rounded-full text-base font-medium">
                    Hackwave 3.0

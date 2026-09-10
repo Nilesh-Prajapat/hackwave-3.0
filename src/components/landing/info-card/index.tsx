@@ -32,9 +32,12 @@ const RoundCard = ({
   index,
   bgColor,
 }: RoundCardProps) => {
+  const isDark = bgColor !== "#FFF4DC" && bgColor !== "#fffaf0";
   return (
     <div
-      className="round-card relative w-full text-[#141414] rounded-2xl p-8 flex flex-col justify-between h-[500px] md:h-[350px]"
+      className={`round-card relative w-full rounded-2xl p-8 flex flex-col justify-between h-[500px] md:h-[350px] ${
+        isDark ? "text-[#FFF4DC]" : "text-[#141414]"
+      }`}
       style={{ backgroundColor: bgColor }}
     >
       {/* Round Icon - Emoji representation of the round type */}
@@ -44,16 +47,26 @@ const RoundCard = ({
       <div className="flex-1">
         {/* Round Badge - Shows "Round 1" or "Round 2" */}
         <div className="mb-3">
-          <span className="inline-block bg-[#141414] text-[#fcf2e8] px-3 py-1 rounded-full text-sm font-medium">
+          <span
+            className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+              isDark ? "bg-[#FFF4DC] text-[#141414]" : "bg-[#141414] text-[#fcf2e8]"
+            }`}
+          >
             Round {index + 1}
           </span>
         </div>
 
         {/* Round Title - Main heading for the round */}
-        <h2 className="text-2xl font-black leading-tight mb-3">{title}</h2>
+        <h2 className="text-2xl font-jansina font-normal leading-tight mb-3">{title}</h2>
 
         {/* Round Subtitle - Secondary description */}
-        <p className="text-lg font-semibold text-[#666] mb-4">{subtitle}</p>
+        <p
+          className={`text-lg font-semibold mb-4 ${
+            isDark ? "text-[#FFF4DC]/80" : "text-[#666]"
+          }`}
+        >
+          {subtitle}
+        </p>
 
         {/* Round Description - Detailed explanation */}
         <p className="text-base font-medium leading-relaxed">{description}</p>
@@ -68,20 +81,20 @@ const RoundCard = ({
 const Card = ({ title, copy, index }: CardProps) => {
   return (
     <div
-      className="card relative h-[260px] text-[#141414] w-full"
+      className="card relative h-[260px] w-full"
       id={`card-${index + 1}`}
     >
       <div className="info-card-inner relative will-change-transform w-full h-full p-[2em] flex flex-col gap-[0.5rem] rounded-xl">
         <div className="card-content flex flex-col justify-between text-left h-full">
           <div className="flex items-start gap-[1em]">
-            <div className="flex-shrink-0 w-12 h-12 flex items-center justify-start">
+            <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center overflow-hidden rounded-[16%]">
               <img
-                className="w-6 h-6 object-contain"
+                className="w-12 h-12 object-contain"
                 src={`/icons/icon_${index}.svg`}
                 alt={`icon-${index}`}
               />
             </div>
-            <h3 className="text-[2.5rem] font-semibold leading-none">
+            <h3 className="text-[2.5rem] font-jansina font-normal leading-none">
               {title}
             </h3>
           </div>
@@ -143,16 +156,16 @@ const SimpleRewardsSection = () => {
           {rewards.map((reward, index) => (
             <div
               key={index}
-              className="card relative h-[300px] text-[#141414] w-full bg-[#fcf2e8] rounded-xl"
+              className="card relative h-[300px] w-full rounded-xl"
               id={`card-${index + 2}`}
             >
               <div className="info-card-inner relative will-change-transform w-full h-full p-[2em] flex flex-col gap-[0.5rem] rounded-xl">
                 <div className="card-content flex flex-col justify-between text-left h-full">
                   <div className="flex items-start gap-[1em]">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center overflow-hidden rounded-[16%]">
                       <img
-                        className="w-6 h-6 object-contain"
-                        src={`/icons/icon_${reward.index}.png`}
+                        className="w-12 h-12 object-contain"
+                        src={`/icons/icon_${reward.index}.svg`}
                         alt={`icon-${reward.index}`}
                       />
                     </div>
@@ -377,7 +390,7 @@ export default function InfoCard() {
       description:
         "Qualify by submitting a presentation (max 10 slides) of a past project. We'll evaluate your team's technical skills. Briefly include: Team Intro & Project Overview, Tech Stack Used, Screenshots or Live Links *For screening only. Cannot be used in the finale.*",
       icon: "💻", // Computer emoji for digital round
-      bgColor: "#f9ffa5", // Bright green background for first round
+      bgColor: "#FFF4DC", // Warm Cream background for first round
     },
     {
       title: "36-Hour Offline Finale",
@@ -385,7 +398,7 @@ export default function InfoCard() {
       description:
         "The top 50 teams are invited to our campus for the finale. You'll have 36 hours to build a new project from scratch based on surprise problem statements revealed at the event. Let the coding begin!",
       icon: "🫶", // Location pin emoji for physical location
-      bgColor: "#fec4dc", // Pink background for second round
+      bgColor: "#F52222", // Vivid Red background for second round
     },
   ];
 

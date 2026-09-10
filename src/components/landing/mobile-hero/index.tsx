@@ -17,7 +17,7 @@ const MobileHero = () => {
               <div className="flex flex-col items-center justify-center gap-4 md:gap-8 order-1 md:order-2">
                 <img
                   className="hackwave-img w-48 md:w-auto"
-                  src="/assets/hackwave-logo.svg"
+                  src="/logo/hackwave title.webp"
                   alt="Hackwave Logo"
                 />
                 <img

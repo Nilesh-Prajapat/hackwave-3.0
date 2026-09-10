@@ -20,11 +20,11 @@ const navLinks = [
 export default function Footer() {
   // Hover background colors for nav links
   const hoverBgColors = [
-    "hover:bg-[#c5ffc9]",
-    "hover:bg-[#f9ffa5]",
-    "hover:bg-[#feaac0]",
-    "hover:bg-[#dcd0fe]",
-    "hover:bg-[#feaac0]",
+    "hover:bg-[#002A4A] hover:text-white",
+    "hover:bg-[#F52222] hover:text-white",
+    "hover:bg-[#FFF4DC] hover:text-[#141414]",
+    "hover:bg-[#002A4A] hover:text-white",
+    "hover:bg-[#F52222] hover:text-white",
   ];
 
   // For nav link refs
@@ -36,7 +36,7 @@ export default function Footer() {
         {/* Main Content: Centered Logo */}
         <div className="flex flex-col items-center justify-center w-full md:w-[55%] mx-auto mt-8 mb-8">
           <img
-            src="/assets/hackwave-logo.svg"
+            src="/logo/hackwave title.webp"
             alt="Hackwave Logo"
             className="w-16 h-16 md:w-20 md:h-20 object-contain mx-auto"
           />
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Nav Links: Row on desktop, grid on mobile */}
         <div className="w-full mt-8">
           {/* Navigation Heading */}
-          <h2 className="text-[#141414] font-bold uppercase text-base md:text-lg tracking-widest mb-2 md:mb-4 text-center">
+          <h2 className="text-[#141414] font-jansina font-normal uppercase text-base md:text-lg tracking-widest mb-2 md:mb-4 text-center">
             Navigation
           </h2>
           <div className="hidden md:flex flex-row justify-between items-center gap-4 w-full">
@@ -55,9 +55,9 @@ export default function Footer() {
                 ref={(el) => {
                   linkRefs.current[i] = el;
                 }}
-                className={`text-[#141414] border-4 border-transparent transition-colors font-extrabold text-xl md:text-3xl uppercase px-2 md:px-4 py-3 md:py-4 rounded text-center w-full block ${
+                className={`text-[#141414] border-4 border-transparent transition-colors font-jansina font-normal text-xl md:text-2xl uppercase px-2 md:px-4 py-3 md:py-4 rounded text-center w-full block ${
                   hoverBgColors[i % hoverBgColors.length]
-                } hover:text-black hover:border-4 hover:border-[#141414]`}
+                } hover:border-4 hover:border-[#141414]`}
                 onMouseEnter={() => {
                   if (linkRefs.current[i]) {
                     gsap.to(linkRefs.current[i], {
