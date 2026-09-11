@@ -10,7 +10,6 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Timeline", href: "/timeline" },
   { name: "Team", href: "/team" },
-  { name: "Judges & Mentors", href: "/judges" },
   {
     name: "Register",
     href: "https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl",
