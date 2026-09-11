@@ -264,7 +264,7 @@ const TextReveal: React.FC = () => {
             </div>
             <div className="w-full text-center">
               <p className="text-[#141414] font-bold text-[clamp(1.3rem,3vw,2.6rem)] sm:text-[clamp(1.1rem,3.8vw,6.3rem)] md:text-[clamp(1.4rem,3.2vw,2rem)] ">
-                August 23-25, 2025
+                October 10-12, 2026
               </p>
             </div>
           </div>

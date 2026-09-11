@@ -49,7 +49,7 @@ export default function Home() {
       >
         <ResponsiveHero />
         <InfoCard />
-        <SponsorsSection />
+        {/* <SponsorsSection /> */}
         <FAQSection />
       </div>
     </>

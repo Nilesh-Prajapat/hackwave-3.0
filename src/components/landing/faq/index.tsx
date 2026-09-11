@@ -151,8 +151,8 @@ const FAQSection = () => {
       question: "What happens if we’re selected for Round 2?",
       answer: (
         <span>
-          Your team will be invited to the offline hackathon from 23 to 25
-          August 2025 at Chameli Devi Group of Institutions, Indore. It’s a
+          Your team will be invited to the offline hackathon from 10 to 12
+          October 2026 at Chameli Devi Group of Institutions, Indore. It’s a
           36-hour on-campus event where you'll build a brand new project from
           scratch based on surprise problem statements revealed at the venue. To
           confirm your spot, you’ll need to pay a ₹500 registration fee per team
