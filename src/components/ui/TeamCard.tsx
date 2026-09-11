@@ -124,7 +124,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
               {member.role}
             </span>
             {member.bio && (
-              <p className="text-[11px] font-medium text-[#141414]/90 italic mt-0.5 leading-tight">
+              <p className="text-xs font-jansina font-normal text-[#141414] mt-0.5 leading-tight">
                 {member.bio}
               </p>
             )}
