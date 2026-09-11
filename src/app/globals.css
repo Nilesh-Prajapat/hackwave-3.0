@@ -80,7 +80,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   --bg: #FDF5ED;
   --fg: #1f1f1f;
-  --loader-bg: #e0e0d8;
+  --loader-bg: #fcf2e8;
   --stroke: rgba(0, 0, 0, 0.2);
   --font-instrument-serif: 'Instrument Serif', serif;
 }

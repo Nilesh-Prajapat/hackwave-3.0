@@ -2,12 +2,12 @@ import React from "react";
 
 const dotStyle: React.CSSProperties = {
   display: "inline-block",
-  width: 16,
-  height: 16,
-  margin: "0 4px",
+  width: 18,
+  height: 18,
+  margin: "0 6px",
   borderRadius: "50%",
-  background: "#7f5af0",
-  animation: "bounce 1s infinite alternate",
+  background: "#F52222",
+  animation: "bounce 0.8s infinite alternate ease-in-out",
 };
 
 const Loader = () => (
@@ -27,16 +27,16 @@ const Loader = () => (
   >
     <style>{`
       @keyframes bounce {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-24px); }
+        0% { transform: translateY(0); opacity: 0.5; }
+        100% { transform: translateY(-24px); opacity: 1; }
       }
     `}</style>
-    <span style={{ ...dotStyle, animationDelay: "0s" }} />
+    <span style={{ ...dotStyle, background: "#F52222", animationDelay: "0s" }} />
     <span
-      style={{ ...dotStyle, background: "#f15bb5", animationDelay: "0.2s" }}
+      style={{ ...dotStyle, background: "#141414", animationDelay: "0.2s" }}
     />
     <span
-      style={{ ...dotStyle, background: "#fee440", animationDelay: "0.4s" }}
+      style={{ ...dotStyle, background: "#F52222", animationDelay: "0.4s" }}
     />
   </div>
 );
