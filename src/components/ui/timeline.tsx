@@ -81,7 +81,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 }}
                 viewport={{ once: true }}
               >
-                <div className="h-4 w-4 rounded-full bg-[#ff6ec7] border border-[#ff6ec7] p-2" />
+                <div className="h-4 w-4 rounded-full bg-[#F52222] border border-[#F52222] p-2" />
               </motion.div>
               <motion.h3
                 className="hidden md:block text-xl md:pl-20 md:text-5xl font-jansina font-normal text-white"
@@ -127,14 +127,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute left-[32px] md:left-[32px] top-0 overflow-hidden w-[4px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-pink-200/20 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="absolute left-[32px] md:left-[32px] top-0 overflow-hidden w-[4px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-[#F52222]/20 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0 w-[4px] bg-gradient-to-t from-[#ff6ec7] via-[#ff1493] to-[#ff69b4] rounded-full shadow-lg shadow-[#ff6ec7]/50"
+            className="absolute inset-x-0 top-0 w-[4px] bg-gradient-to-t from-[#F52222] via-[#d01b1b] to-[#F52222] rounded-full shadow-lg shadow-[#F52222]/50"
             transition={{ duration: 0.3, ease: "easeOut" }}
           />
         </div>
