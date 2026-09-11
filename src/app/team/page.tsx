@@ -219,7 +219,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 9,
     name: "Nilesh Prajapat",
-    role: "Technical Lead",
+    role: "The Tech Guy",
     bio: "The guy who made the website",
     image: "/teamPhoto/Nilesh_Prajapat.jpeg",
     category: "team",
@@ -309,7 +309,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 17,
     name: "Somya Tanwar",
-    role: "Technical Lead",
+    role: "The Tech Guy",
     bio: "The guy who shipped assets",
     image: "/teamPhoto/Somya_Tanwar.png",
     category: "team",
