@@ -47,12 +47,12 @@ const FAQSection = () => {
         <span>
           Two rounds:
           <br />
-          🖥️ <b>Round 1 – Online Screening (Free):</b> Submit a PPT of a past project your team built on Unstop.
+          <b>Round 1 – Online Screening (Free):</b> Submit a PPT of a past project your team built on Unstop.
           <br />
-          🏫 <b>Round 2 – 36-Hour Offline Finale:</b> Selected teams build a brand new project from scratch at CDGI, Indore.
+          <b>Round 2 – 36-Hour Offline Finale:</b> Selected teams build a brand new project from scratch at CDGI, Indore.
           <br />
           <br />
-          💸 Only teams selected for Round 2 pay a one-time ₹500 registration fee per team to confirm their spot. Meals and stay are covered!
+          Only teams selected for Round 2 pay a one-time ₹500 registration fee per team to confirm their spot. Meals and stay are covered!
         </span>
       ),
     },
@@ -69,7 +69,7 @@ const FAQSection = () => {
             <li>Screenshots or live links</li>
           </ul>
           <br />
-          💡 <b>Note:</b> This project is for screening only and cannot be reused in Round 2!
+          <b>Note:</b> This project is for screening only and cannot be reused in Round 2!
         </span>
       ),
     },
