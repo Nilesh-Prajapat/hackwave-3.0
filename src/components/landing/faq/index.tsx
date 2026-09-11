@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+import JapaneseBrushHeading from "@/components/ui/JapaneseBrushHeading";
 
 const FAQSection = () => {
   const faqData = [
@@ -246,11 +247,9 @@ const FAQSection = () => {
     <div className="bg-[#141414] text-[#fcf2e8] py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4 md:px-6 lg:px-8 min-h-screen">
       <div className="max-w-6xl mx-auto mt-14">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-4xl px-10 sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#fcf2e8] mb-4 sm:mb-6">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#ccc] max-w-3xl mx-auto px-2">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 flex flex-col items-center">
+          <JapaneseBrushHeading>Frequently Asked Questions</JapaneseBrushHeading>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#ccc] max-w-3xl mx-auto px-2 mt-4 sm:mt-6">
             Everything you need to know about HACKWAVE 3.0. Can't find what
             you're looking for? Reach out to us on social media or email.
           </p>
@@ -269,7 +268,7 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-[#fcf2e8] text-[#141414] rounded-lg sm:rounded-xl border border-[#141414]/10 shadow-sm hover:shadow-md transition-all duration-300"
               >
-                <AccordionTrigger className="px-4 sm:px-6 py-3 sm:py-4 text-left font-semibold text-[#141414] hover:text-[#141414]/80 transition-colors text-sm sm:text-base">
+                <AccordionTrigger className="px-4 sm:px-6 py-3 sm:py-4 text-left font-jansina font-normal text-[#141414] hover:text-[#141414]/80 transition-colors text-base sm:text-lg">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-4 sm:px-6 pb-4 sm:pb-6">

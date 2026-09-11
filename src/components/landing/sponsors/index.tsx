@@ -1,4 +1,5 @@
 "use client";
+import JapaneseBrushHeading from "@/components/ui/JapaneseBrushHeading";
 
 type Sponsor = {
   name: string;
@@ -35,11 +36,9 @@ export default function SponsorsSection() {
     <section className="bg-[#141414] text-[#fcf2e8] w-screen min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8">
       <div className="w-full max-w-6xl py-16 md:py-20">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-5xl sm:text-5xl md:text-2xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-black leading-relaxed sm:leading-tight md:leading-tight lg:leading-tight mb-3">
-            Sponsors
-          </h2>
-          <p className="text-[#ccc] text-base md:text-lg max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-14 flex flex-col items-center">
+          <JapaneseBrushHeading>Sponsors</JapaneseBrushHeading>
+          <p className="text-[#ccc] text-base md:text-lg max-w-2xl mx-auto mt-4">
             Big thanks to our partners who make Hackwave possible.
           </p>
         </div>

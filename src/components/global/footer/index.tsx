@@ -30,10 +30,10 @@ export default function Footer() {
   const linkRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-[#141414] px-4 md:px-16 border-[#222] overflow-x-hidden">
-      <div className="w-full min-h-screen max-w-6xl bg-[#fcf2e8] border border-[#e5e5e5] rounded-2xl flex flex-col justify-between p-4 md:p-8 my-8 shadow-xl">
+    <div className="w-full min-h-[auto] md:min-h-screen flex flex-col justify-center items-center bg-[#141414] px-4 md:px-16 border-[#222] overflow-x-hidden py-8">
+      <div className="w-full max-w-6xl bg-[#fcf2e8] border border-[#e5e5e5] rounded-2xl flex flex-col justify-between p-6 md:p-8 shadow-xl">
         {/* Main Content: Centered Logo */}
-        <div className="flex flex-col items-center justify-center w-full md:w-[55%] mx-auto mt-8 mb-8">
+        <div className="flex flex-col items-center justify-center w-full md:w-[55%] mx-auto mt-4 md:mt-8 mb-4 md:mb-8">
           <img
             src="/logo/hackwave title.webp"
             alt="Hackwave Logo"
@@ -41,7 +41,7 @@ export default function Footer() {
           />
         </div>
         {/* Nav Links: Row on desktop, grid on mobile */}
-        <div className="w-full mt-8">
+        <div className="w-full mt-4 md:mt-8">
           {/* Navigation Heading */}
           <h2 className="text-[#141414] font-jansina font-normal uppercase text-base md:text-lg tracking-widest mb-2 md:mb-4 text-center">
             Navigation
@@ -88,7 +88,7 @@ export default function Footer() {
                 ref={(el) => {
                   linkRefs.current[i] = el;
                 }}
-                className={`text-[#141414]  border-4 border-transparent transition-colors font-extrabold text-lg uppercase px-2 py-3 rounded text-center w-full block ${
+                className={`text-[#141414] border-4 border-transparent transition-colors font-jansina font-normal text-lg uppercase px-2 py-3 rounded text-center w-full block ${
                   hoverBgColors[i % hoverBgColors.length]
                 } hover:text-black hover:border-4 hover:border-[#141414]`}
                 onMouseEnter={() => {
@@ -115,7 +115,7 @@ export default function Footer() {
             ))}
           </div>
           {/* Socials Heading */}
-          <h2 className="text-[#141414] font-bold uppercase text-base md:text-lg tracking-widest mt-8 mb-2 md:mb-4 text-center">
+          <h2 className="text-[#141414] font-jansina font-normal uppercase text-base md:text-lg tracking-widest mt-8 mb-2 md:mb-4 text-center">
             Connect
           </h2>
           {/* Socials Row */}

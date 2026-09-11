@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import JapaneseBrushHeading from "@/components/ui/JapaneseBrushHeading";
 
 // ============================================================================
 // TYPE DEFINITIONS
@@ -138,14 +139,12 @@ const SimpleRewardsSection = () => {
   ];
 
   return (
-    <div className="bg-[#141414] text-[#fcf2e8] py-4 px-4">
+    <div className="bg-[#141414] text-[#fcf2e8] py-8 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-5xl sm:text-5xl md:text-2xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-black leading-relaxed sm:leading-tight md:leading-tight lg:leading-tight mb-6">
-            What You Get
-          </h2>
-          <p className="text-lg md:text-xl text-[#ccc] max-w-3xl mx-auto">
+        <div className="text-center mb-10 flex flex-col items-center">
+          <JapaneseBrushHeading>What You Get</JapaneseBrushHeading>
+          <p className="text-sm sm:text-lg text-[#ccc] max-w-3xl mx-auto mt-4">
             Discover the amazing rewards and benefits waiting for you at
             Hackwave.
           </p>
@@ -156,24 +155,24 @@ const SimpleRewardsSection = () => {
           {rewards.map((reward, index) => (
             <div
               key={index}
-              className="card relative h-[300px] w-full rounded-xl"
+              className="card relative h-[260px] sm:h-[300px] w-full rounded-xl"
               id={`card-${index + 2}`}
             >
-              <div className="info-card-inner relative will-change-transform w-full h-full p-[2em] flex flex-col gap-[0.5rem] rounded-xl">
+              <div className="info-card-inner relative will-change-transform w-full h-full p-6 flex flex-col gap-2 rounded-xl">
                 <div className="card-content flex flex-col justify-between text-left h-full">
-                  <div className="flex items-start gap-[1em]">
-                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center overflow-hidden rounded-[16%]">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center overflow-hidden rounded-[16%]">
                       <img
-                        className="w-12 h-12 object-contain"
+                        className="w-10 h-10 object-contain"
                         src={`/icons/icon_${reward.index}.svg`}
                         alt={`icon-${reward.index}`}
                       />
                     </div>
-                    <h3 className="text-[2.5rem] font-semibold leading-none">
+                    <h3 className="text-2xl sm:text-3xl font-jansina font-normal leading-tight">
                       {reward.title}
                     </h3>
                   </div>
-                  <p className="text-[1.3rem] font-medium text-left">
+                  <p className="text-sm sm:text-base font-medium text-left">
                     {reward.copy}
                   </p>
                 </div>
@@ -426,9 +425,9 @@ export default function InfoCard() {
           {/* ============================================================================
               SECTION TITLE - Always visible and centered
               ============================================================================ */}
-          <h1 className="w-full text-center max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[75%] text-[#fcf2e8] text-5xl sm:text-5xl md:text-2xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-black leading-relaxed sm:leading-tight md:leading-tight lg:leading-tight px-2 sm:px-4 z-10 mb-4 sm:mb-6 md:mb-8">
-            How It Works
-          </h1>
+          <div className="w-full flex justify-center mb-4 sm:mb-6 md:mb-8 z-10">
+            <JapaneseBrushHeading>How It Works</JapaneseBrushHeading>
+          </div>
 
           {/* ============================================================================
               DESCRIPTION TEXT - Gets covered by sliding cards during animation
@@ -486,7 +485,7 @@ export default function InfoCard() {
               >
                 <div className="info-card-inner relative will-change-transform w-full h-full p-[2em] flex flex-col gap-[0.5rem]">
                   <div className="card-content flex flex-col text-left w-[80%]">
-                    <h1 className="text-[3rem] font-semibold leading-none mb-[1.5em] md:mb-[1rem]">
+                    <h1 className="text-[3rem] font-jansina font-normal leading-none mb-[1.5em] md:mb-[1rem]">
                       What You Will Get
                     </h1>
                   </div>

@@ -238,32 +238,32 @@ const TextReveal: React.FC = () => {
             </h1>
             <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-[clamp(1.8rem,2vw,4.1rem)] sm:text-[clamp(1rem,1.8vw,1.3rem)] md:text-[clamp(1rem,1.7vw,2rem)] text-[#141414] mb-6 sm:mb-8 md:mb-10 lg:mb-12">
               <div className="flex flex-col items-center">
-                <h2 className="font-black mb-2">200+</h2>
-                <p className="font-medium ">Participants</p>
+                <h2 className="font-jansina font-normal mb-2">200+</h2>
+                <p className="font-medium">Participants</p>
               </div>
               <div className="flex flex-col items-center">
-                <h2 className="font-black mb-2">36</h2>
+                <h2 className="font-jansina font-normal mb-2">36</h2>
                 <p className="font-medium">Hours</p>
               </div>
               <div className="flex flex-col items-center">
-                <h2 className="font-black mb-2">100+</h2>
+                <h2 className="font-jansina font-normal mb-2">100+</h2>
                 <p className="font-medium">Projects</p>
               </div>
               <div className="flex flex-col items-center">
-                <h2 className="font-black mb-2">30+</h2>
+                <h2 className="font-jansina font-normal mb-2">30+</h2>
                 <p className="font-medium">Colleges</p>
               </div>
               <div className="flex flex-col items-center">
-                <h2 className="font-black mb-2">500K+</h2>
+                <h2 className="font-jansina font-normal mb-2">500K+</h2>
                 <p className="font-medium">Social Impressions</p>
               </div>
               <div className="flex flex-col items-center">
-                <h2 className="font-black mb-2">1 Lakh</h2>
+                <h2 className="font-jansina font-normal mb-2">₹1 Lakh+</h2>
                 <p className="font-medium">Prize Pool</p>
               </div>
             </div>
             <div className="w-full text-center">
-              <p className="text-[#141414] font-bold text-[clamp(1.3rem,3vw,2.6rem)] sm:text-[clamp(1.1rem,3.8vw,6.3rem)] md:text-[clamp(1.4rem,3.2vw,2rem)] ">
+              <p className="text-[#141414] font-jansina font-normal text-[clamp(1.5rem,3.5vw,2.6rem)] sm:text-[clamp(1.1rem,3.8vw,6.3rem)] md:text-[clamp(1.4rem,3.2vw,2rem)]">
                 October 10-12, 2026
               </p>
             </div>
