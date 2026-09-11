@@ -118,11 +118,16 @@ const TeamCard: React.FC<TeamCardProps> = ({
             </div>
           </div>
 
-          {/* Row 2: Role Badge underneath */}
-          <div className="flex items-center justify-start">
+          {/* Row 2: Role Badge & optional bio underneath */}
+          <div className="flex flex-col items-start justify-start gap-1">
             <span className="inline-block text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-[#F52222] text-white shadow-xs">
               {member.role}
             </span>
+            {member.bio && (
+              <p className="text-[11px] font-medium text-[#141414]/90 italic mt-0.5 leading-tight">
+                {member.bio}
+              </p>
+            )}
           </div>
         </div>
       </div>
