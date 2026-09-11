@@ -13,7 +13,7 @@ const navLinks = [
   { name: "Judges & Mentors", href: "/judges" },
   {
     name: "Register",
-    href: "https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl",
+    href: "https://unstop.com/hackathons/hackwave-30-chameli-devi-group-of-institutions-1750278",
   },
 ];
 

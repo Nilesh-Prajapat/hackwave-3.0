@@ -33,7 +33,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       {/* Hero Section with Large Centered Heading */}
       <div className="min-h-screen flex flex-col items-center justify-center px-6">
         <div className="text-center max-w-6xl mx-auto">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-tight">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-jansina text-white leading-tight">
             <VariableProximity
               label="Hackwave Timeline"
               fromFontVariationSettings="wght 200"
@@ -84,7 +84,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 <div className="h-4 w-4 rounded-full bg-[#ff6ec7] border border-[#ff6ec7] p-2" />
               </motion.div>
               <motion.h3
-                className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white"
+                className="font-jansina hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{
                   opacity: 1,
@@ -115,7 +115,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-white">
+              <h3 className="font-jansina md:hidden block text-2xl mb-4 text-left font-bold text-white">
                 {item.title}
               </h3>
 

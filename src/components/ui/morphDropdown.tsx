@@ -115,7 +115,7 @@ export const PillMenu: FC = () => {
               <div className="flex items-center justify-center">
                 {/* Join Now Button - Desktop Only */}
                 <Link
-                  href="https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl"
+                  href="https://unstop.com/hackathons/hackwave-30-chameli-devi-group-of-institutions-1750278"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden md:flex items-center justify-center px-3 py-3 text-[#e6d9cf] rounded-lg font-jansina font-normal text-sm hover:bg-[#F52222] hover:text-white transition-colors duration-200"

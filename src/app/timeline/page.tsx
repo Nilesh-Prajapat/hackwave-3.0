@@ -27,7 +27,7 @@ const Card = ({ badge, title, content, cta, index }: CardProps) => {
   const badgeBg = badgeColors[index - 1] || "#c6fe69"; // fallback color
   return (
     <div
-      className="card relative h-full text-[#141414] w-full"
+      className="card relative h-full text-[#141414] w-full "
       id={`card-${index + 1}`}
     >
       <div className="info-card-inner relative will-change-transform w-full h-full p-4 sm:p-6 md:p-8 flex flex-col gap-4 sm:gap-6 md:gap-8 rounded-xl">
@@ -37,7 +37,7 @@ const Card = ({ badge, title, content, cta, index }: CardProps) => {
         >
           {badge}
         </Badge>
-        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
+        <h3 className="font-jansina text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
           {title}
         </h3>
 
@@ -73,7 +73,7 @@ const Card = ({ badge, title, content, cta, index }: CardProps) => {
 export default function TimelinePage() {
   const data = [
     {
-      title: "5th July 2025",
+      title: "6th September 2026",
       content: (
         <Card
           index={1}
@@ -81,16 +81,16 @@ export default function TimelinePage() {
           title="Online Submission (via Unstop)"
           content={
             <>
-              <b>Starts:</b> 5 July 2025, 12:00 PM IST
+              <b>Starts:</b> 6th September 2026, 12:00 PM IST
               <br />
-              <b>Ends:</b> 31 July 2025, 12:00 PM IST
+              <b>Ends:</b> 26th September 2026, 12:00 PM IST
               <br />
               <b>Where:</b> Unstop
               <br />
               <br />
               Time to show off what your team&apos;s made of. Submit a short,
-              punchy PPT {"{"}max 10 slides{"}"} showcasing a past project you&apos;re
-              proud of.
+              punchy PPT {"{"}max 10 slides{"}"} showcasing a past project
+              you&apos;re proud of.
               <br />
               <ul className="list-disc ml-6 mt-2 space-y-1">
                 <li>Quick team intro</li>
@@ -108,13 +108,32 @@ export default function TimelinePage() {
           }
           cta={{
             label: "Submit on Unstop",
-            href: "https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl",
+            href: "https://unstop.com/hackathons/hackwave-30-chameli-devi-group-of-institutions-1750278",
           }}
         />
       ),
     },
     {
-      title: "24rd July 2025",
+      title: "26th september 2026",
+      content: (
+        <Card
+          index={3}
+          badge="Deadline"
+          title="Submission Deadline"
+          content={
+            <>
+              <b>Deadline:</b>26th September 2026, 12:00 PM IST
+              <br />
+              This is your final call to upload your Round 1 submission.
+              <br />
+              Late entries? Not a chance. Set a reminder.
+            </>
+          }
+        />
+      ),
+    },
+    {
+      title: "1st October 2026",
       content: (
         <Card
           index={2}
@@ -122,7 +141,7 @@ export default function TimelinePage() {
           title="First Batch Approval"
           content={
             <>
-              <b>Date:</b> 24 July 2025
+              <b>Date:</b> 1 October 2026
               <br />
               First batch of selected teams will be announced today.
               <br />
@@ -139,26 +158,7 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "31st July 2025",
-      content: (
-        <Card
-          index={3}
-          badge="Deadline"
-          title="Submission Deadline"
-          content={
-            <>
-              <b>Deadline:</b> 31 July 2025, 12:00 PM IST
-              <br />
-              This is your final call to upload your Round 1 submission.
-              <br />
-              Late entries? Not a chance. Set a reminder.
-            </>
-          }
-        />
-      ),
-    },
-    {
-      title: "10th August 2025",
+      title: "5th October 2026",
       content: (
         <Card
           index={4}
@@ -166,7 +166,7 @@ export default function TimelinePage() {
           title="Second Batch Approval"
           content={
             <>
-              <b>Date:</b> 10 August 2025
+              <b>Date:</b> 5 October 2026
               <br />
               This is the last batch of approvals. If you&apos;ve made it this
               far, congrats, you&apos;re about to get everything you need to for
@@ -179,7 +179,7 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "23rd August 2025",
+      title: "10th October 2026",
       content: (
         <Card
           index={5}
@@ -187,9 +187,9 @@ export default function TimelinePage() {
           title="Offline Hackathon (Finale)"
           content={
             <>
-              <b>Starts:</b> 23 August 2025, 09:00 AM IST
+              <b>Starts:</b> 10th October 2026, 01:00 PM IST
               <br />
-              <b>Ends:</b> 25 August 2025, 02:00 PM IST
+              <b>Ends:</b> 12th October 2026, 03:00 PM IST
               <br />
               <b>Venue:</b> Chameli Devi Group of Institutions, Indore
               <br />
