@@ -33,7 +33,7 @@ export default function Home() {
             left: 0,
             width: "100vw",
             height: "100vh",
-            background: "#fff",
+            background: "#141414",
             zIndex: 10000,
             opacity: loading ? 1 : 0,
             transition: "opacity 0.5s ease",
@@ -49,7 +49,7 @@ export default function Home() {
       >
         <ResponsiveHero />
         <InfoCard />
-        <SponsorsSection />
+        {/* <SponsorsSection /> */}
         <FAQSection />
       </div>
     </>
