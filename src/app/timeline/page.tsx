@@ -83,7 +83,7 @@ export default function TimelinePage() {
             <>
               <b>Starts:</b> 6th September 2026, 12:00 PM IST
               <br />
-              <b>Ends:</b> 26th September 2026, 12:00 PM IST
+              <b>Ends:</b> 28th September 2026, 11:00 PM IST
               <br />
               <b>Where:</b> Unstop
               <br />
@@ -114,7 +114,7 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "26th september 2026",
+      title: "28th September 2026",
       content: (
         <Card
           index={3}
@@ -122,7 +122,7 @@ export default function TimelinePage() {
           title="Submission Deadline"
           content={
             <>
-              <b>Deadline:</b>26th September 2026, 12:00 PM IST
+              <b>Deadline:</b> 28th September 2026, 11:00 PM IST
               <br />
               This is your final call to upload your Round 1 submission.
               <br />
