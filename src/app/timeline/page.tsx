@@ -158,7 +158,7 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "5th October 2026",
+      title: "2nd October 2026",
       content: (
         <Card
           index={4}
@@ -166,7 +166,7 @@ export default function TimelinePage() {
           title="Second Batch Approval"
           content={
             <>
-              <b>Date:</b> 5 October 2026
+              <b>Date:</b> 2 October 2026
               <br />
               This is the last batch of approvals. If you&apos;ve made it this
               far, congrats, you&apos;re about to get everything you need to for
